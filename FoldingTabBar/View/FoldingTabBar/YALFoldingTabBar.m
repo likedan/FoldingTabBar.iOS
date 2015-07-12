@@ -414,6 +414,8 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     
     self.counter ++;
     
+    [NSThread sleepForTimeInterval:1.0f];
+    
     if (!self.isAnimated) {
         if (self.state == YALStateCollapsed) {
             [self expand];
